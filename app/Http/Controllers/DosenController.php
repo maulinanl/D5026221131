@@ -14,4 +14,11 @@ public function index(){
     return "Hasil Perkalian = " . (string)$c . "</h1>";
 }
 
+public function showBlog(){
+    $nama = "Budi";
+    $alamat = "Surabaya";
+    $umur = 19;
+    return view('blog', ['nama' => $nama, 'alamat' => $alamat, 'umur' => $umur]);
+}
+
 }

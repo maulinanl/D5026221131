@@ -88,4 +88,5 @@ Route::get('websiteku', function () {
     return view('websiteku');
 });
 
-Route::get('perkalian', 'DosenController@index');
+Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
+Route::get('show','App\Http\Controllers\DosenController@showBlog');
