@@ -12,6 +12,7 @@
         Nama : {{$nama}}
         Alamat : {{$alamat}}
         Umur : {{$umur}}
+        
     </p>
 </body>
 </html>
