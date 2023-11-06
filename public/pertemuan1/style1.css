@@ -1,0 +1,22 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color:darkblue;
+}
+
+.pembuka{
+    font-size: medium;
+    text-decoration-line: underline;
+    text-align: justify;
+}
+
+.isiberita{
+    font-size: medium;
+    text-align: justify;
+}
+
+.deskripsiimg{
+    font-size: small;
+}

@@ -1,0 +1,113 @@
+body {
+    background-color: #5BD1D7;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logorise{
+    border-radius: 50%;
+    width: 100px;
+    margin-top: 50px;
+}
+.subjudul{
+    color: black;
+}
+h4{
+    font-weight: lighter;
+}
+svg{
+    padding: 10px;
+}
+.button1{
+    width: 700px;
+    height: 60px;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    font-size: 17px;
+    position: relative; 
+    padding-left: 30px;
+    margin-bottom: 10px;
+    /* display: inline-block; */
+}
+.icon-image{
+    position: absolute; /* Menggunakan posisi absolut */
+    left: 10px; /* Letakkan gambar ikon di sisi kiri */
+    top: 50%; /* Pusatkan vertikal */
+    transform: translateY(-50%);
+    width: 50px; /* Lebar gambar ikon */
+    height: 50px; 
+}
+.sosmed:hover{
+    transform: scale(1.2);
+}
+.button1:hover{
+    background-color: transparent;
+}
+h1{
+    position: absolute; /* Menggunakan posisi absolut */
+    right: 20px; /* Letakkan gambar ikon di sisi kiri */
+    top: -10%; /* Pusatkan vertikal */
+    transform: translateY(-50%);
+    width: 30px; /* Lebar gambar ikon */
+    height: 30px; 
+}
+
+.subs{
+    top: 50%;
+    width: 200px;
+    height: 100px;
+    color: black;
+    border-radius: 30px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    font-size: 17px;
+    position: relative; 
+    padding-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button2{
+    position: absolute; /* Menggunakan posisi absolut */
+    left: 20px; /* Letakkan gambar ikon di sisi kiri */
+    top: 50%; /* Pusatkan vertikal */
+    transform: translateY(-50%);
+    width: 30px; /* Lebar gambar ikon */
+    height: 30px; 
+}
+
+
+
+
+/* Gaya tombol hamburger menu */
+.hamburger {
+    font-size: 24px; /* Ukuran simbol */
+    cursor: pointer; /* Ganti ikon kursor saat diarahkan ke atasnya */
+}
+
+/* Gaya informasi yang muncul */
+.menu-info {
+    display: none; /* Informasi awalnya disembunyikan */
+    position: fixed; /* Mengatur posisi mengambang */
+    top: 50%; /* Posisi vertikal di tengah */
+    left: 50%; /* Posisi horizontal di tengah */
+    transform: translate(-50%, -50%); /* Pusatkan elemen */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* Layer di depan elemen lain */
+}
+
+/* Gaya untuk menampilkan informasi saat label diklik */
+#menu-toggle:checked + .hamburger + .menu-info {
+    display: block;
+}
+
+/* Gaya untuk menyembunyikan checkbox */
+.menu-toggle {
+    display: none;
+}

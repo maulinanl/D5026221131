@@ -1,0 +1,36 @@
+h3{
+    color: crimson;
+
+}
+
+p{
+    color: blue;
+    text-align: justify;
+}
+
+body{
+    background-color: beige;
+}
+
+.ratakanan /* ini untuk bikin paragraf jadi rata kanan*/{
+    text-align: right;
+    color: black;
+    font-weight: bold;
+} 
+
+h3:hover /* ini untuk merubah warna */ {
+    color: black;
+}
+
+.kotaku1{
+    border-style: solid;
+    color: blue;
+}
+
+.fotolingkaran{
+    border-radius: 50%;
+}
+
+.fotorounded{
+    border-radius: 10%;
+}
