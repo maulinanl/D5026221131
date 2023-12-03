@@ -111,6 +111,7 @@ Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
 
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
+Route::get('/pegawai/views/{id}','App\Http\Controllers\PegawaiController@views');
 
 // Route::get('/pegawai', [PegawaiController::class, 'index']);
 // Route::get('/pegawai/tambah', [PegawaiController::class, 'tambah']);

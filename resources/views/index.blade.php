@@ -8,7 +8,7 @@
     <a class="button btn btn-success" href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
 
     <br />
-    <br />
+
 @endsection
 
 @section('konten')
@@ -33,7 +33,7 @@
                 <td>{{ $p->pegawai_umur }}</td>
                 <td>{{ $p->pegawai_alamat }}</td>
                 <td>
-                    <a class="button btn btn-success" href="/pegawai/view/{{ $p->pegawai_id }}">View</a>
+                    <a class="button btn btn-success" href="/pegawai/views/{{ $p->pegawai_id }}">View</a>
                     |
                     <a class="button btn btn-warning" href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
                     |
@@ -48,4 +48,5 @@
     Jumlah Data : {{ $pegawai->total() }} <br />
     Data Per Halaman : {{ $pegawai->perPage() }} <br />
     {{ $pegawai->links() }}
+
 @endsection

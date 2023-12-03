@@ -42,8 +42,6 @@
             </ul>
           </nav>
         <hr />
-        <br />
-        <br />
 
         <!-- bagian judul halaman blog -->
         @yield('judul_halaman')
