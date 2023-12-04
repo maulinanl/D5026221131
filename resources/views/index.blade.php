@@ -14,7 +14,8 @@
 @section('konten')
     <p>Cari Data Pegawai :</p>
     <form action="/pegawai/cari" method="GET">
-        <input class="form-control" type="text" name="cari" placeholder="Cari Pegawai Berdasarkan Nama" value="{{ old('cari') }}">
+        <input class="form-control" type="text" name="cari" placeholder="Cari Pegawai Berdasarkan Nama"
+            value="{{ old('cari') }}">
         <input type="submit" value="CARI" class="btn btn-primary mb-4 mt-2">
     </form>
     <table class="table tables-striped table-hover">
@@ -30,7 +31,10 @@
             <tr>
                 <td>{{ $p->pegawai_nama }}</td>
                 <td>{{ $p->pegawai_jabatan }}</td>
-                <td>{{ $p->pegawai_umur }}</td>
+                <td
+                    @if ($p->pegawai_umur <= 30) class="bg-dark text-light text-center"
+                    @elseif ($p->pegawai_umur >= 30) class="bg-danger text-light text-center" @endif>
+                    {{ $p->pegawai_umur }}</td>
                 <td>{{ $p->pegawai_alamat }}</td>
                 <td>
                     <a class="button btn btn-success" href="/pegawai/views/{{ $p->pegawai_id }}">View</a>
