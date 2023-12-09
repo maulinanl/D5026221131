@@ -34,7 +34,7 @@
                   Database
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="/pegawai">Pegawai</a>
+                  <a class="dropdown-item" href="/tumbuhan">Tumbuhan</a>
                   <a class="dropdown-item" href="#">Link 2</a>
                   <a class="dropdown-item" href="#">Link 3</a>
                 </div>
@@ -57,7 +57,7 @@
         <br />
         <hr />
         <footer>
-            <p>&copy; <a href="https://www.malasngoding.com">www.malasngoding.com</a>. 2018 - 2019</p>
+            <p>&copy; <a href="https://www.malasngoding.com">www.gardenshop.com</a>. 2018 - 2019</p>
         </footer>
 
     </div>

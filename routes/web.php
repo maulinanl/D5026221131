@@ -119,3 +119,15 @@ Route::get('/pegawai/views/{id}','App\Http\Controllers\PegawaiController@views')
 // Route::post('/pegawai/update', [PegawaiController::class, 'update']);
 // Route::post('/pegawai/store', [PegawaiController::class, 'store']);
 // Route::get('/pegawai/hapus/{id}', [PegawaiController::class, 'hapus']);
+
+//route CRUD
+Route::get('/tumbuhan','App\Http\Controllers\tumbuhanController@index');
+Route::get('/tumbuhan/tambah','App\Http\Controllers\tumbuhanController@tambah');
+Route::post('tumbuhan/store','App\Http\Controllers\tumbuhanController@store');
+Route::get('tumbuhan/edit/{id}','App\Http\Controllers\tumbuhanController@edit');
+Route::post('tumbuhan/update','App\Http\Controllers\tumbuhanController@update');
+Route::get('tumbuhan/hapus/{id}','App\Http\Controllers\tumbuhanController@hapus');
+Route::get('/tumbuhan/cari','App\Http\Controllers\tumbuhanController@cari');
+Route::get('tumbuhan/views/{id}','App\Http\Controllers\tumbuhanController@view');
+
+
