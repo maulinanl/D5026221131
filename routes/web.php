@@ -130,4 +130,9 @@ Route::get('tumbuhan/hapus/{id}','App\Http\Controllers\tumbuhanController@hapus'
 Route::get('/tumbuhan/cari','App\Http\Controllers\tumbuhanController@cari');
 Route::get('tumbuhan/views/{id}','App\Http\Controllers\tumbuhanController@view');
 
+//route CRUD
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@index');
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiController@tambah');
+Route::post('nilaikuliah/store','App\Http\Controllers\NilaiController@store');
+
 
