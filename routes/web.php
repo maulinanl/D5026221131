@@ -135,4 +135,11 @@ Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@index');
 Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiController@tambah');
 Route::post('nilaikuliah/store','App\Http\Controllers\NilaiController@store');
 
+//route CRUD
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/tambah','App\Http\Controllers\KaryawanController@tambah');
+Route::post('karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/cari','App\Http\Controllers\KaryawanController@cari');
+Route::get('karyawan/hapus/{id}','App\Http\Controllers\KaryawanController@hapus');
+
 

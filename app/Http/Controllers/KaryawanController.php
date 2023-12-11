@@ -16,16 +16,25 @@ class KaryawanController extends Controller
 
 	public function tambah()
 	{
-		return view('tambahNilai');
+		return view('tambahKaryawan');
 	}
 
 	public function store(Request $request)
 	{
-		DB::table('nilaikuliah')->insert([
-			'NRP' => $request->NRP,
-			'NilaiAngka' => $request->NilaiAngka,
-			'SKS' => $request->SKS
+		DB::table('karyawan')->insert([
+            'kodepegawai' => $request->kodepegawai,
+			'namalengkap' => $request->namalengkap,
+			'divisi' => strtoupper($request->divisi),
+			'departemen' => strtolower($request->departemen),
 		]);
-		return redirect('/nilaikuliah');
+		return redirect('/karyawan');
 	}
+
+    public function hapus($id)
+    {
+        DB::table('karyawan')->where('kodepegawai',$id)->delete();
+        return redirect('/karyawan');
+    }
+
+
 }
